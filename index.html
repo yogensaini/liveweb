@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Serenity Sphere</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- hero page section -->
+        <div class="wrapper" id="home">
+            <div class="hero-container">
+                <h1 class="logo-hero">Serenity Sphere</h1>
+                <h1 class="hero-heading">
+                    Nurture Your Mind,<br /> Elevate Your Life
+                </h1>
+                <h3 class="hero-subHead">
+                    Explore tools, resources, and expert guidance<br /> to support your journey towards mental clarity,
+                    <br />balance, and well-being.
+                </h3>
+
+            </div>
+        </div>
+        <!-- About Page Section -->
+        <div class="about-cont" id="about">
+            <div class="about-content">
+                <h1 class="about-heading">
+                    Our Mission
+                </h1>
+                <h3 class="about-subHead">
+                    Stay Productive & Work Remotely <br /><br />Empowering individuals through education <br /> and
+                    support to
+                    promote mental well-being.
+                </h3>
+                <div>
+
+                    <button class="hero-button" onclick="toggleExtraContent()">Read More</button>
+                </div>
+                <div class="extra-content" style="display: none;">
+                    <p>
+                        At our core, we believe in fostering<br /> a community that mental health and well-being.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Blog Section -->
+        <div class="blog-section" id="blog">
+            <div class="container">
+                <h1 class="main-heading">Mental Health Articles</h1>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="blogimg.jpg" alt="Article Image 1" class="card-image">
+                        <h2 class="card-title">Parenting after Receiving a Schizophrenia Diagnosis</h2>
+                        <p class="card-description" style="display: none;">
+                            Around one third of people with schizophrenia are a parent. Parenting programmes aim to
+                            provide support and training for
+                            parents to help manage their child's behaviour. Targeted parenting programmes for this group
+                            could have a positive
+                            effect for both the parents and their children.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog2.jpg" alt="Article Image 2" class="card-image">
+                        <h2 class="card-title">The Power of Insight Building for People with Mental Illness</h2>
+                        <p class="card-description" style="display: none;">
+                            Insight building is an essential aspect of psychotherapy that can help clients better
+                            understand themselves, their
+                            experiences and their relationships. It is a process that helps clients identify patterns of
+                            thinking and behavior
+                            contributing to their difficulties.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog3.jpg" alt="Article Image 3" class="card-image">
+                        <h2 class="card-title">How My Relationships with My Caregivers Has Helped Me Navigate
+                            Schizoaffective
+                            Disorder</h2>
+                        <p class="card-description" style="display: none;">
+                            When a mental health condition such as schizoaffective disorder is present, a relationship
+                            can be a remarkable
+                            resource and support system, but it can also be a trigger. It can help to stabilize
+                            someone’s mood, give them confidence
+                            and a sense of security, and keep them actively involved in the world. It can also inspire
+                            doubts and fears and nudge
+                            someone further into isolation.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog4.jpg" alt="Article Image 4" class="card-image">
+                        <h2 class="card-title">My Journey to Accepting My Dissociative Identity Disorder</h2>
+                        <p class="card-description" style="display: none;">
+                            My journey to accepting my DID has been winding and challenging, but it's also been
+                            transformative. I've discovered
+                            strength in my fragmentation, beauty in my brokenness. I am more than my disorder; I am a
+                            survivor, a warrior, and a
+                            work of art in progress.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog5.jpg" alt="Article Image 5" class="card-image">
+                        <h2 class="card-title">Hearing Voices and Turning Them Off Through Meditation</h2>
+                        <p class="card-description" style="display: none;">
+                            meditation can help people who hear voices by allowing them to focus on their breath and let
+                            go of other thoughts,
+                            including those that seem to come from an outside source. This can help people to reduce the
+                            intensity and
+                            duration of the voices.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog6.jpg" alt="Article Image 6" class="card-image">
+                        <h2 class="card-title">Celebrating My Daughter’s Life and Schizophrenia Recovery</h2>
+                        <p class="card-description" style="display: none;">
+                            My daughter's schizophrenia journey has taught me that recovery is possible, hope is real,
+                            and love conquers all. I'm
+                            proud to be her mother, advocate, and biggest cheerleader.
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blog7.jpg" alt="Article Image 7" class="card-image">
+                        <h2 class="card-title">Becoming Who I was Before Schizophrenia — Or Should I?</h2>
+                        <p class="card-description" style="display: none;">
+                            One way I survived schizophrenia was learning what gratitude truly means and how to use this
+                            power in daily life. Early
+                            on in my illness, I found power in being negative and figured I was the only person in the
+                            world who wasn't “normal.” I
+                            thought feeling sorry for myself was loving myself, but I was wrong
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                    <div class="card">
+                        <img src="blogimg.jpg" alt="Article Image 8" class="card-image">
+                        <h2 class="card-title">A Cultural Experience of Recovery</h2>
+                        <p class="card-description" style="display: none;">
+                            Recovery is not one-size-fits-all. Cultural sensitivity, understanding, and community are
+                            essential for effective
+                            support. By acknowledging and addressing cultural differences, we can:
+
+                            1. Reduce stigma and shame
+                            2. Increase access to care
+                            3. Foster inclusive recovery environments
+                            4. Celebrate diverse recovery stories
+                        </p>
+                        <a href="#" class="read-more" onclick="toggleDescription(event)">Read More &gt;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Contact Page -->
+        <div class="contact-section" id="contact">
+            <div>
+                <div class="form-container">
+                    <h1 class="head-form">Contact Us</h1>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" onclick="alert('Form Submitted Successfully')">Send
+                            Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <h2>Serenity<span class="highlight">Sphere</span></h2>
+                <p>
+                    We are honored to be a part of your healthcare journey and committed to delivering
+                    compassionate, personalized, and top-notch care every step of the way.
+                </p>
+                <p>
+                    Trust us with your mental well-being, and let us work together to achieve the best
+                    possible outcomes for you and your loved ones.
+                </p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Address -123, ramnagar park,jhotwara,Jaipur,Rajasthan,India</p>
+                <p>Email: shekhawatpratistha1427@gmail.com</p>
+                <p>Phone: (+91)9256316927</p>
+                <p>Instagram - serenitysphere_mentalwellbeing</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
